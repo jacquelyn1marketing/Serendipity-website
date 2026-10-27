@@ -107,7 +107,8 @@
     opacity: 0; pointer-events: none; transition: opacity .3s ease;
   }
   .nav-scrim.open { opacity: 1; pointer-events: auto; }
-  @media (max-width: 860px) {
+  @media (min-width: 1181px) { .navlinks { gap: 22px; } .navlinks a { white-space: nowrap; } }
+  @media (max-width: 1180px) {
     .navlinks { position: fixed; top: 0; right: 0; bottom: 0; left: auto; width: min(78vw, 340px);
       z-index: 55; padding-top: calc(110px + env(safe-area-inset-top,0px));
       background: linear-gradient(165deg, var(--maroon-deep) 0%, var(--espresso) 65%);
@@ -434,6 +435,7 @@
       <li><a class="link" href="#minor-illness">Minor Illness</a></li>
       <li><a class="link" href="#aesthetics">Aesthetics</a></li>
       <li><a class="link" href="#pricing">Pricing</a></li>
+      <li><a class="link" href="#gift-cards">Gift Cards</a></li>
       <li><a class="link" href="#contact">Contact</a></li>
       <li><a class="btn btn-gold" href="https://book.squareup.com/appointments/zr89nqjyeaib3v/location/LW22JW7ZM86YC/services" target="_blank" rel="noopener">Book Now</a></li>
     </ul>
